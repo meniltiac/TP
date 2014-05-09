@@ -1,0 +1,19 @@
+/* //////////// CUSTOM STYLES ////////////// */
+
+.navbar-wrapper {
+	margin-top: 0;
+}
+
+.navbar {
+	min-height: 0;
+	height: 30px;
+}
+
+.nav li a {
+	text-transform: uppercase;
+}
+
+
+.navbar-inverse {
+	background-color: #000;
+}
