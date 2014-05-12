@@ -1,7 +1,22 @@
 /* //////////// CUSTOM STYLES ////////////// */
 
+body {
+	font-size: 11px;
+	font-family: 'Arial Unicode MS', sans-serif;
+	overflow-x: hidden;
+}
+
+.float-right {
+	float: right;
+}
+
 .navbar-wrapper {
 	margin-top: 0;
+}
+
+.navbar-wrapper .container-fluid {
+	height: 30px;
+	background: #000;
 }
 
 .navbar {
@@ -16,4 +31,275 @@
 
 .navbar-inverse {
 	background-color: #000;
+}
+
+.navbar-nav > li > a {
+	line-height: 17px;
+    padding-bottom: 0;
+    padding-top: 0;
+    border-right: 1px solid #fff;
+    margin-bottom: 8px;
+    margin-top: 5px
+   }
+   
+li.no-bar a, .nav.navbar-nav li:last-child a{
+	border-right: none;
+}
+   
+li.premium {
+	background-color: #0079AB;
+}   
+
+.navbar-nav li {
+	position: relative;
+}
+
+
+
+.navbar-nav li .sub-nav {
+	display: none;
+	list-style-type: none;
+	margin-left: 0;
+	text-align: left;
+	position: absolute;
+	z-index: 50;
+	padding-left: 0;
+	min-width: 160px;
+	background: #ECEEEF; 
+}
+
+
+.navbar-nav li:hover .sub-nav {
+	display: block;
+}
+
+.square {
+	position: absolute;
+	background-image: url('../images/square.png');
+
+}
+
+
+.sub-nav li {
+	background: #ECEEEF;
+}
+
+.sub-nav li a {
+	color: #969899;
+	text-decoration: none;
+	padding: 4px 10px;
+	display: block;
+	width: 100%;
+}
+
+.sub-nav li a:hover {
+	background: none repeat scroll 0 0 #0079AB;
+}
+
+
+
+.search input {
+	width: 77%;
+	background-image: url('../images/search2.png');
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding:4px 20px;
+	border: 1px solid #898989;
+	float: right;
+}
+ 
+/* CAROUSEL */ 
+ 
+#myCarousel {
+	margin-bottom: 0;
+} 
+ 
+.carousel-caption {
+	background:rgba(0,0,0,0.20);
+	color: #fff;
+	text-align: left;
+	font-size: 12px;
+	padding: 15px 20px;
+	bottom: 7%;
+    left: 16%;
+    right: 50%;
+} 
+
+
+.carousel-caption h1 {
+	font-weight: bold;
+	font-size: 12px;
+	margin-top:2px;
+	margin-bottom: 0;
+}
+
+
+.carousel-caption p {
+	font-size: 12px;
+	margin-bottom: 0;
+}
+
+.TPCarousel .carousel-inner.main {
+	margin: 0 auto;
+}
+ 
+.TPCarousel .carousel-inner {
+	overflow: visible;
+} 
+
+.TPCarousel .carousel-control.left, .TPCarousel .carousel-control.right {
+background-color: rgba(0, 68, 119, 0.9);
+}
+
+
+
+/*
+.TPCarousel .carousel-control.left, .TPCarousel .carousel-control.right {
+	background-image: linear-gradient(rgba(0, 68, 119, .60);
+	background-repeat: repeat-x;
+} 
+ 
+*/
+/*
+.TPCarousel .item {
+	overflow: visible;
+	width: 25%;
+} 
+ 
+ 
+.TPCarousel .item.active {
+	width: 50%;
+} 
+ 
+ 
+.TPCarousel .item img {
+	width: 100%;
+} 
+*/
+ 
+/* BLACK BAR  */
+ 
+#black-bar {
+	height: 80px;
+	background-color: #000;
+	text-align: center;
+	color: #fff;
+	font-family: 'Nanum Brush Script', fantasy;
+	font-size: 50px;
+	line-height: 80px;
+} 
+  
+.highlight  {
+	background-image: url('../images/titlebackground.png');
+	background-repeat: no-repeat;
+	background-position: center center;
+	font-family: 'Nanum Brush Script', fantasy;
+	font-size: 50px;
+	line-height: 80px;
+	color: #fff;
+} 
+   
+   
+/* MAIN SECTION */
+
+.main {
+	max-width: 960px;
+	color: #898989;
+}
+
+.main .row {
+	margin-bottom: 20px;
+}
+
+iframe {
+	width: 100%;
+/*
+	min-width:560px; */
+	min-height:315px; 
+}
+.headers ul, .headers ul li {
+	padding-left: 0;
+}
+
+.header {
+	height: 30px;
+	background: #898989;
+	color: #D6D6D6;
+	border: 1px solid #D6D6D6;
+	text-align: center;
+	line-height: 30px;
+	list-style-type: none;
+	padding-left: 0;
+	width: 100%;
+}
+
+.header a {
+	text-decoration: none;
+	width: 100%;
+	height: 30px;
+	background: #898989;
+	color: #D6D6D6;
+	display: block;
+}
+
+.header a:hover {
+	background: #0079AB;
+}
+
+
+
+/* COOL CAROUSEL */
+			
+			#wrapper {
+				background-color: #fff;
+				width: 100%;
+				height: 450px;
+/* 				margin-top: -225px; */
+				overflow: hidden;
+/* 				position: absolute; */
+/* 				top: 50%; */
+/* 				left: 0; */
+			}
+			#carousel img {
+				display: block;
+				float: left;
+			}
+			#prev, #next {
+				background-color: rgba(43, 85, 117, 0.5);
+				display: block;
+				height: 450px;
+				width: 50%;
+				top: 0;
+				position: absolute;
+			}
+			#prev:hover, #next:hover {
+				background-color: #2B5575;
+				background-color: rgba(43, 85, 117, 0.5);
+			}
+			#prev {
+				left: -495px;
+			}
+			#next {
+				right: -495px;
+			}
+			#pager {
+				display: none;
+			}
+
+
+@media only screen and (max-width: 740px) {
+	.headers {
+		margin-top: 20px;
+	}
+	
+	.search input {
+		width: 30%;
+		margin-right: 20px;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.search input {
+		width: 50%;
+	}
 }
